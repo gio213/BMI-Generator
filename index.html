@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know your BMI</title>
+  </head>
+  <body>
+    <center>
+      <div></div>
+      <h1 class="bmigerator">BMI Generator</h1>
+
+      <form class="container" id="container">
+        <br />
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Enter your Name"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="textEmail"
+          placeholder="Enter Your E-mail"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          name="weight"
+          id="textWeight"
+          placeholder="Enter your Weight"
+          required
+        />
+        <br />
+        <input
+          type="text"
+          name="height"
+          id="textHeight"
+          placeholder="Enter your Height"
+          required
+        />
+        <br />
+
+        <button class="generateBtn" type="submit">Generate</button>
+        <br />
+        <button
+          onclick="reset(), reset2()"
+          style="width: 100px"
+          class="resetButtom"
+          type="reset"
+        >
+          Reset
+        </button>
+        <h1 id="result">Your Bmi is:0</h1>
+      </form>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
