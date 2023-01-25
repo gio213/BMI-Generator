@@ -117,8 +117,8 @@ body {
   margin-top: 41px;
   background-color: white;
   border-radius: 25px 25px 0px 0px;
-  height: auto;
-  width: auto;
+  height: fit-content;
+  width: fit-content;
   left: 0px;
   top: 144px;
   border-radius: [object Object]px;
@@ -149,8 +149,9 @@ body {
 
   cursor: pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
   .container {
+    justify-content: center;
     margin-top: 50%;
     position: static;
     display: grid;
@@ -159,13 +160,16 @@ body {
     margin-top: 41px;
     background-color: white;
     border-radius: 25px 25px 0px 0px;
-    height: 100%;
-    width: 50%;
+    height: fit-content;
+    width: 400px;
     left: 0px;
     top: 144px;
     border-radius: [object Object]px;
     overflow: hidden;
     border-style: groove;
     border: 5px solid rgb(135, 135, 135);
+  }
+  .resetButtom {
+    align-items: center;
   }
 }
