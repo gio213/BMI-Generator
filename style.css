@@ -117,8 +117,8 @@ body {
   margin-top: 41px;
   background-color: white;
   border-radius: 25px 25px 0px 0px;
-  height: 600px;
-  width: 600px;
+  height: auto;
+  width: auto;
   left: 0px;
   top: 144px;
   border-radius: [object Object]px;
@@ -149,19 +149,18 @@ body {
 
   cursor: pointer;
 }
-
-@media (max-width: 390px) {
+@media screen and (max-width: 480px) {
   .container {
     margin-top: 50%;
     position: static;
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     margin-top: 41px;
     background-color: white;
     border-radius: 25px 25px 0px 0px;
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 50%;
     left: 0px;
     top: 144px;
     border-radius: [object Object]px;
